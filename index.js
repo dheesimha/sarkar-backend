@@ -10,12 +10,11 @@ app.use(express.json())
 
 
 app.get("/complaints", (req, res) => {
-    res.sendFile(__dirname + "/public/publiccomplaints.html")
+    res.send('Complaints page')
 })
 
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
-    // res.send("Hello")
+    res.send("Hello")
 })
 
 
